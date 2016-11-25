@@ -1,0 +1,111 @@
+
+
+.select-frame {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  min-width: 180px;
+  height: 28px;
+  line-height: 28px;
+  vertical-align: middle;
+}
+.select-arrow {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  border-color: black transparent transparent transparent;
+  border-style: solid;
+  border-width: 4px;
+  z-index: 10;
+}
+.select-input {
+  position: absolute;
+  display: inline-block;
+  box-sizing:border-box;
+  padding: 5px;
+  height: inherit;
+  min-width: inherit;
+  z-index: 9;
+}
+.select-input > input {
+  position: absolute;
+  display: inline-block;
+  box-sizing:border-box;
+  font-size: 14px;
+  border: none;
+  height: inherit;
+  margin: -5px;
+  line-height: 28px;
+  width: 95%\9;
+  *min-width: 180px;
+  padding: 0 25px 0 10px;
+  border: #ccc 1px solid;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  z-index: 8;
+}
+:root .select-input > input{
+  position: absolute;
+  display: inline-block;
+  box-sizing:border-box;
+  font-size: 14px;
+  border: none;
+  height: inherit;
+  line-height: 28px;
+  margin: -5px;
+  width: 100%;
+  padding: 0 25px 0 10px;
+  border: #ccc 1px solid;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  z-index: 8;
+}
+.select-spread {
+  position: relative;
+  width: inherit;
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  top: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  z-index: 10;
+  padding: 5px 0;
+}
+.select-spread::-webkit-scrollbar {
+  display: none;
+}
+.select-hide {
+  display: none;
+}
+.select-item {
+  margin: 0 2px;
+  padding: 0 6px;
+  cursor: pointer;
+  font-size: 13px;
+  min-height: 28px;
+  line-height: 28px;
+  box-sizing: border-box;
+  transition: all .5s ease 0s;
+}
+.select-itemHover {
+  background : #52b0cc;
+  color: white;
+}
+.selected{
+  background-color : #09a6d6;
+  color: white;
+}
+.no-result {
+  margin: 0;
+  color: #ccc;
+  text-align: center;
+  font-weight: bolder;
+  font-style:oblique;
+}
