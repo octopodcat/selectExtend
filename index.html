@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>下拉框插件</title>
     <link href="select.css" rel="stylesheet" type="text/css">
-    <script src="jquery-1.11.1.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/2.0.2/jquery.min.js"></script>
     <script src="selectExtend.js"></script>
     <style type="text/css">
       img{
@@ -31,15 +31,6 @@
       <option value="pjx">蒲江县</option>
       <option value="xjx">新津县</option>
     </select>
-    <br><br><br><br><br><br><br><br><br><br>
-    <h2>插件使用说明</h2>
-    <p><b>兼容性：</b>IE9 + 、 Chrome、 Firefox、  Safari 测试通过。<small style="color:#aaa">（IE8有部分兼容问题）</small></p>
-    <p><b>使用方法：</b><code>$('select').selectExtend();</code> </p>
-    <p><b>功能：</b>支持输入、搜索（根据名称搜索、根据value值搜索）</p>
-    <p>图例：<img src="images/1.png"><img src="images/2.png"><img src="images/3.png"></p>
-    <p><b>其他：</b>若<code>select</code>下第一个<code>option</code>设置属性<code>style="display: none;"</code>，则其<code>value</code>值作为输入框<code>input</code>的占位符<code>placeholder</code> ; 若没有，则默认选择第一个元素。    支持上、下、回车键选择。
-    </p>
-    <p>图例：<img src="images/4.png"><img src="images/5.png"></p>
     <script>
 		$(function(){
       $('select').selectExtend();
